@@ -1,0 +1,14 @@
+/* In your global CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-blur {
+  background-color: rgba(237, 226, 226, 0.7); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.bg-blur {
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
