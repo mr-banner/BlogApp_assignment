@@ -41,10 +41,9 @@ export default function PostDetails() {
       </Link>
 
       <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-        <div className="flex justify-between">
+        <div className="sm:flex sm:justify-between">
         <h1 className="text-2xl font-bold mb-4">{post.title}</h1>
-
-          <div>
+          <div className="sm:mt-0 mb-3">
             <button
               onClick={() => setDeleteModal(true)}
               disabled={deleting}
