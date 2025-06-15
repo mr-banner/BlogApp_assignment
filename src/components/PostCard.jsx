@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function PostCard({ post, onDelete }) {
   return (
-    <div className="border w-full rounded-2xl p-4 shadow hover:shadow-md transform-gpu  hover:[transform:translateZ(150px)] transition">
+    <div className="border w-full rounded-2xl p-4 shadow hover:shadow-md transform-gpu hover:[transform:translateZ(150px)] cursor-pointer hover:border-slate-400 transition">
       <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
       <p className="text-gray-600 mb-4">
         {post.body.length > 100 ? `${post.body.substring(0, 200)}...` : post.body}
